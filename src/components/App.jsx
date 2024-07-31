@@ -36,7 +36,7 @@ function App() {
           />
         );
       })}
-      <Footer />
+            <Footer />
     </div>
   );
 }

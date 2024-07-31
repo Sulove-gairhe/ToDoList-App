@@ -5,30 +5,34 @@ import Note from "./Note";
 import CreateArea from "./CreateArea";
 
 function App() {
-  const [storeNewInput, storeNewInputHolder] = useState([]);
+  const [notes, setNotes] = useState([]);
 
-  function handleSubmit(storeArray) {
-    storeNewInputHolder((prevValue) => {
-      return [...prevValue, storeArray];
+  function addNote(newNote) {
+    setNotes((prevNotes) => {
+      return [...prevNotes, newNote];
     });
   }
-  function handleDeletion(indexToBeDeleted) {
-    storeNewInputHolder((prevValue) => {
-      return prevValue.filter((item, index) => index !== indexToBeDeleted);
+
+  function deleteNote(id) {
+    setNotes((prevNotes) => {
+      return prevNotes.filter((noteItem, index) => {
+        return index !== id;
+      });
     });
   }
+
   return (
     <div>
       <Header />
-      <CreateArea onAdd={handleSubmit} />
-      {storeNewInput.map((toBePassedValue, index) => {
+      <CreateArea onAdd={addNote} />
+      {notes.map((noteItem, index) => {
         return (
           <Note
-            id={index}
             key={index}
-            title={toBePassedValue.title}
-            content={toBePassedValue.content}
-            handleDeletion={handleDeletion}
+            id={index}
+            title={noteItem.title}
+            content={noteItem.content}
+            onDelete={deleteNote}
           />
         );
       })}

@@ -1,5 +1,5 @@
 # ToDoList-App 
-This is a simple and efficient To-Do List application built using React for the frontend
+This is a simple and efficient To-Do List application built using React for the frontend.It allows users to create, manage, and track their tasks with an intuitive and user-friendly interface.
 
 Getting Started:
 Follow the steps below to set up and run the project in your local environment.
@@ -9,7 +9,7 @@ Ensure the following are installed on your system:
 
 Node.js (Latest LTS version)
 npm or yarn
-MongoDB (Required for database functionality)
+
 # Installation & Setup
 1. Clone the Repository
 Run the following command to clone the repository and navigate to the project directory:

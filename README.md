@@ -1,7 +1,7 @@
 # ToDoList-App 
 This is a simple and efficient To-Do List application built using React for the frontend
 
-# Getting Started
+Getting Started:
 Follow the steps below to set up and run the project in your local environment.
 
 # Prerequisites
@@ -30,7 +30,7 @@ npm run start:client
 OR
 yarn run start:client
 
-# The application will be accessible at http://localhost:3000.
+ he application will be accessible at http://localhost:3000.
 
 
 

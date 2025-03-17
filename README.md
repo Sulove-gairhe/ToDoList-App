@@ -1,35 +1,36 @@
-# ToDoList-App with React
-Created with CodeSandbox-
+# ToDoList-App 
+This is a simple and efficient To-Do List application built using React for the frontend
 
 Getting Started
+Follow the steps below to set up and run the project in your local environment.
 
-Installation
-Use npm install or yarn install to install dependencies.
+Prerequisites
+Ensure the following are installed on your system:
 
-Start Frontend
-Use npm run start:client or yarn run start:client to start the frontend. Open http://localhost:3000 to view it in the browser.
+Node.js (Latest LTS version)
+npm or yarn
+MongoDB (Required for database functionality)
+Installation & Setup
+1. Clone the Repository
+Run the following command to clone the repository and navigate to the project directory:
 
-Start Backend
-To start the backend server, follow these steps:
+git clone https://github.com/YOUR-USERNAME/ToDoList-App.git
+cd ToDoList-App
+2. Install Dependencies
+Install the necessary dependencies for both the frontend and backend:
 
-Environment Setup:
+npm install
+# OR
+yarn install
 
-Create a .env file in the root directory of your project.
-Add the following environment variables to the .env file:
-PORT=5000
-DB_STRING=<YOUR_DB_STRING>
-NODE_ENV=development
-API_VERSION=/v1
-SECREATE=<YOUR_KEY>
-GMAIL=<YOUR_GMAIL>
-GMAIL_PASSWORD=<YOUR_GMAIL_PASSWORD>
-Replace <YOUR_DB_STRING>, <YOUR_KEY>, <YOUR_GMAIL>, and <YOUR_GMAIL_PASSWORD> with your actual database connection string, secret key, Gmail address, and Gmail password respectively.
+Frontend Setup
+Start the React Application
+Run the following command to start the frontend server:
+npm run start:client
+# OR
+yarn run start:client
+The application will be accessible at http://localhost:3000.
 
-Dependencies Installation:
 
-Run npm install or yarn install to install the required dependencies.
-Starting the Server:
 
-Run npm run start:dev or yarn run start:dev to start the backend server.
-This command will use Nodemon to watch for changes and restart the server automatically.
-The server will be running on http://localhost:5000.
+
